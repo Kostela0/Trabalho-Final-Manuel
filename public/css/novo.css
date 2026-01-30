@@ -5,16 +5,22 @@
     --bege: #FFF1D0;
     --vermelho: #DD1C1A;
     --vermelhoEscuro: #961715;
+    --verdeSpotify: #1DB954;
+    --verdeClaroSpotify: #0de257;
+    --verdeEscuroSpotify: #1d9246;
+    --cinzaSpotify: #535353;
+    --cinzaEscuroSpotify: #2e2e2e;
 }
 
 body {
     height: 100vh;
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: #f5f5f5;
+    background: #121212;
+    color: white;
 }
 h1, h2 {
-    color: var(--azul);
+    color: var(--verdeClaroSpotify);
     text-align: center;
     margin-bottom: -10px;
 }
@@ -24,7 +30,7 @@ h1, h2 {
     align-items: center;
 }
 form {
-    background-color: var(--azul);
+    background-color: var(--cinzaEscuroSpotify);
     padding: 15px;
     width: 300px;
     margin-top: 5%;
@@ -43,7 +49,7 @@ input {
 .salvar {
     cursor: pointer;
     color: white;
-    background-color: var(--azul-escuro);
+    background-color: var(--verdeSpotify);
     border-radius: 10px;
     width: 100px;
     text-align: center;
@@ -52,7 +58,7 @@ input {
     border: none;
 }
 .salvar:hover {
-    background-color: #064d64;
+    background-color: #1d9246;
 }
 .cancelar {
     display: inline-block;
