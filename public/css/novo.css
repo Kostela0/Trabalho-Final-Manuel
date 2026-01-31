@@ -76,3 +76,12 @@ input {
 .cancelar:hover {
     background-color: var(--vermelhoEscuro);
 }
+select {
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    background-color: white;
+}
