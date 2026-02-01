@@ -18,7 +18,7 @@
                 <h2 class="titulo">Nova Música</h2>
                 <p class="pSup">
                     <label>Título:</label><br />
-                    <input name="titulo" required/>
+                    <input name="nome" required/>
                 </p>
 
                 <p>
@@ -27,11 +27,22 @@
                 </p>
 
                 <p>
+                    <label>Artista:</label><br />
+                    <select name="artistaId" required>
+                        <% artistas.forEach(a => { %>
+                            <option value="<%= a.id %>">
+                                <%= a.nome %>
+                            </option>
+                        <% }) %>
+                    </select>
+                </p>
+
+  <p>
                     <label>Playlist:</label><br />
-                    <select name="amigoId" required>
+                    <select name="playlistId" required>
                         <% amigos.forEach(a => { %>
                             <option value="<%= a.id %>">
-                                <%= a.nome %> (<%= a.email %>)
+                                <%= a.titulo %>
                             </option>
                         <% }) %>
                     </select>

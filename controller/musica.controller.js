@@ -1,5 +1,5 @@
 import gerarPdf from "../utils/gerarPDF.js";
-import { Musica, Artista } from '../models/index.js';
+import { Musica, Artista, Playlist } from '../models/index.js';
 
 export default class MusicaController {
     constructor (app) {
@@ -49,13 +49,14 @@ export default class MusicaController {
         });
         
         app.get('/jogos/novo', async (req, res) => {
-         const amigos = await Musica.findAll({ order: [['nome', 'ASC']] });
-         res.render('jogos/novo', { amigos });
+         const amigos = await Playlist.findAll({ order: [['titulo', 'ASC']] });
+         const artistas = await Artista.findAll({ order: [['nome', 'ASC']] })
+         res.render('jogos/novo', { amigos, artistas : artistas});
         });
         
         app.post('/jogos/novo', async (req, res) => {
          const { nome, artistaId } = req.body;
-         await Musica.create({ nome, artistaId: Number(amigoId) });
+         await Musica.create(req.body);
          res.redirect('/jogos');
         });
         

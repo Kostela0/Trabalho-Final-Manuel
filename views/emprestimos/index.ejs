@@ -23,10 +23,7 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Jogo</th>
-                <th>Quem pegou</th>
-                <th>Início</th>
-                <th>Fim</th>
+                <th>Nome</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -35,10 +32,7 @@
             <% emprestimos.forEach(e => { %>
                 <tr>
                     <td class="itemlista id"><%= e.id %></td>
-                    <td class="itemlista"><%= e.jogo ? e.jogo.titulo : '—' %></td>
-                    <td class="itemlista"><%= e.amigo ? e.amigo.nome : '—' %></td>
-                    <td class="itemlista"><%= e.dataInicio %></td>
-                    <td class="itemlista"><%= e.dataFim ? e.dataFim : 'em aberto' %></td>
+                    <td class="itemlista"><%= e.titulo %></td>
                     <td class="itemlista acoes">
                         <form 
                             action="/emprestimos/excluir/<%= e.id %>" 

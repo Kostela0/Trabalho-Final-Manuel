@@ -25,6 +25,8 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>ArtistaID</th>
+                <th>Gênero</th>
+                <th>Playlist</th>
                 <th>Ações</th>
 
             </tr>
@@ -35,7 +37,9 @@
                 <tr>
                     <td class="itemlista id"><%= j.id %></td>
                     <td class="itemlista"><%= j.nome %></td>
-                    <td class="itemlista"><%= j.ArtistaID %></td>
+                    <td class="itemlista"><<%=j.genero%></td>
+                    <td class="itemlista"><%= j.artistaID %></td>
+                    <td class="itemlista"><%= j.playlistId %></td>
                     <td class="itemlista acoes">
                         <a href="/jogos/editar/<%= j.id %>" class="editar">Editar</a>
 

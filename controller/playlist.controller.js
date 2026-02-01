@@ -61,12 +61,9 @@ export default class PlaylistController {
         
         app.post('/emprestimos/novo', async (req, res) => {
          const { jogoId, amigoId, dataInicio, dataFim } = req.body;
-         await Playlist.create({
-         jogoId: Number(jogoId),
-         amigoId: Number(amigoId),
-         dataInicio,
-         dataFim: dataFim || null
-         });
+         await Playlist.create(
+         req.body
+         );
          res.redirect('/emprestimos');
         });
         
