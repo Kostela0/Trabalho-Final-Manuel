@@ -32,14 +32,22 @@
         </p>
 
         <p>
-            <label>Dono (Amigo):</label><br />
-            <select name="amigoId" required>
+            <label>Artista:</label><br />
+            <select name="artistaId" required>
+                <% artistas.forEach(a => { %>
+                    <option value="<%= a.id %>">
+                        <%= a.nome %>
+                    </option>
+                <% }) %>
+            </select>
+        </p>
+
+        <p>
+            <label>Playlist:</label><br />
+            <select name="playlistId" required>
                 <% amigos.forEach(a => { %>
-                    <option 
-                        value="<%= a.id %>" 
-                        <%= Number(a.id) === Number(jogo.amigoId) ? 'selected' : '' %>
-                    >
-                        <%= a.nome %> (<%= a.email %>)
+                    <option value="<%= a.id %>">
+                        <%= a.titulo %>
                     </option>
                 <% }) %>
             </select>
