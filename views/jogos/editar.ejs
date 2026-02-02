@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <title>Editar Música</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/novo.css" />
     <link rel="shortcut icon" href="/img/spotifyLogo.png" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Editar Música</h1>
+    <div class="containerGrande">
+        <div class="img">
+            <img src="/img/spvn.gif" alt="spotify" />
+        </div>
 
-    <form action="/jogos/editar/<%= jogo.id %>" method="POST">
+        <div class="form-container">
+            <form action="/jogos/editar/<%= jogo.id %>" method="POST">
+        <h2 class="titulo">Editar Música</h2>
 
         <p>
             <label>Título:</label><br />
@@ -53,11 +58,15 @@
             </select>
         </p>
 
-        <p>
-            <button type="submit">Salvar</button>
-            <a href="/jogos">Cancelar</a>
+        <p class="acoes">
+            <button type="submit" class="salvar">Salvar</button>
+            <a href="/jogos" class="cancelar">Cancelar</a>
         </p>
-
+            <div class="spotify-logo">
+                <img src="/img/spotifyLogoWhite.png" alt="Spotify" class="spotifyLogoWhite">
+            </div>
     </form>
+        </div>
+    </div>
 </body>
 </html>

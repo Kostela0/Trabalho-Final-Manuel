@@ -8,10 +8,14 @@
 </head>
 
 <body>
-    <h1>Editar Amigo</h1>
+    <div class="containerGrande">
+        <div class="img">
+            <img src="/img/paypal.gif" alt="spotify" />
+        </div>
 
-    <div class="form-container">
+        <div class="form-container">
         <form action="/amigos/editar/<%= amigo.id %>" method="POST">
+            <h2 class="titulo">Editar Artista</h2>
             <p>
                 <label>Nome:</label><br />
                 <input 
@@ -25,7 +29,11 @@
                 <button type="submit" class="salvar">Salvar</button>
                 <a href="/amigos" class="cancelar">Cancelar</a>
             </p>
+            <div class="spotify-logo">
+                <img src="/img/spotifyLogoWhite.png" alt="Spotify" class="spotifyLogoWhite">
+            </div>
         </form>
+    </div>
     </div>
 </body>
 </html>
