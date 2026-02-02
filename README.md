@@ -90,6 +90,8 @@ Essa separação facilita a manutenção, organização e escalabilidade do sist
 ├── server.js
 ├── package.json
 └── README.md
+```
+
 ## 🚀 Como Executar o Projeto
 ## 1️⃣ Clonar o repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
