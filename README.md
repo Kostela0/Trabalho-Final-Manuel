@@ -120,4 +120,5 @@ Este projeto foi desenvolvido com fins educacionais, com o objetivo de aplicar c
 - Bento Kauê de Sousa Lima
 - João Manuel da Silva Paulo
 - José Nillo Marques Martins
-🎓 **Curso**: Análise e Desenvolvimento de Sistemas (ADS)
+  
+- 🎓 **Curso**: Análise e Desenvolvimento de Sistemas (ADS)
