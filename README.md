@@ -94,8 +94,8 @@ Essa separação facilita a manutenção, organização e escalabilidade do sist
 
 ## 🚀 Como Executar o Projeto
 ## 1️⃣ Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+- git clone https://github.com/seu-usuario/seu-repositorio.git
+- cd seu-repositorio
 
 ## 2️⃣ Instalar as dependências
 - npm install
