@@ -74,6 +74,9 @@ Essa separação facilita a manutenção, organização e escalabilidade do sist
 │
 ├── views/
 │   ├── amigos/
+│   │   └── editar.ejs
+│   │   └── index.ejs
+│   │   └── novo.ejs
 │   │   └── relatorioArtistas.ejs
 │   ├── jogos/
 │   ├── emprestimos/
